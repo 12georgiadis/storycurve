@@ -4,11 +4,6 @@
 	(global.storycurve = factory(global.d3,global.d3,global.d3,global.d3,global.d3,global.d3));
 }(this, (function (d3Selection,d3Shape,d3Array,d3Axis,d3Scale,d3Zoom) { 'use strict';
 
-var babelHelpers = {};
-
-
-
-
 var asyncGenerator = function () {
   function AwaitValue(value) {
     this.value = value;
@@ -149,50 +144,6 @@ var createClass = function () {
     return Constructor;
   };
 }();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-babelHelpers;
 
 // private functions
 var helper = {

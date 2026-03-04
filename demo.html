@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Story Explorer – Démo</title>
+  <link rel="stylesheet" href="dist/storycurve.css">
+</head>
+<body>
+  <div id="storycurve"></div>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-tip@0.9.1/index.js"></script>
+  <script src="dist/storycurve.js"></script>
+
+  <script>
+    const data = {
+      "script_info": {
+        "scenes": [
+          { "narrative_order": 0, "story_order": 29, "scene_metadata": { "size": 1000, "description": "Intro" } },
+          { "narrative_order": 1, "story_order": 10, "scene_metadata": { "size": 800, "description": "Flashback" } },
+          { "narrative_order": 2, "story_order": 5, "scene_metadata": { "size": 600, "description": "Climax" } }
+        ]
+      }
+    };
+
+    window.onload = () => {
+      if (typeof storycurve !== ‘undefined’) {
+        new storycurve(‘#storycurve’).draw(data);
+      } else {
+        console.error("storycurve n’est pas dispo !");
+      }
+    };
+  </script>
+</body>
+</html>
